@@ -1,2 +1,18 @@
-123
-dev
+拉去代码  git clone  ************
+创建并切换到该分支     git   checkout    -b   dev  
+修改完，要提交，首先要将本地的分支的代码更新一下  git  pull ，
+   如果是需要从远程仓库的某个分支进行pull，git  pull  origin branchname
+推送代码，要将代码推送到远程的个人分支，进行检视：git push origin remotebranchname
+上述方法在推送的时候回自动在远程仓库创建一个同名的分支，可以使用git branch -a查看所有的分支
+检视成功后，要合入代码到远程的主分支。需要在仓库提交MergeRequest ，简称MR，大佬同意后就会自动合入了。
+
+查看分支    git branch，
+查看远程分支，git branch -r
+删除dev分支：git branch -d dev  
+强制删除dev分支：git branch -D dev
+删除远程分支：git push origin --delete branchname
+
+切换分支，git  checkout branchname
+本地分支的合并，首先确定要将那个分支合入到目标分支，就需要先切换到目标分支上，使用 git merge 那个分支名
+
+git log查看提交记录
