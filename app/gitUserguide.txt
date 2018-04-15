@@ -1,0 +1,25 @@
+
+
+
+
+
+git clone 下载
+git clone 制指定某个分支
+git checkout -b dev   在本地拉出dev分支
+修改
+git add
+++++》git reset hard HARD ^
+
+git commit -m ""
+ ++++》git commit  --amend
+
+git checkout master  切换到master
+++++》
+
+git merge dev  将分支dev合并到master
+
+
+git pull 从远程更新代码到master
+
+git push  将master代码推送到远程仓库master
+git push origin dev 将本地dev推送到远程dev
