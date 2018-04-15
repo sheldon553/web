@@ -23,8 +23,8 @@ git add之后想撤销，使用  git reset HEAD  将暂存区的文件撤销add�
 本地多次commit之后，想回到其中某一次的    git reset --hard commitID     这个可以任意调到某次提交状态
 git log 查看commitID
 
+-----------------扯他妈的蛋-----------
 本地重新提交时撤销，push之后到远程仓库是回滚，回滚是有风险的
-
 push之后的回滚操作
 删除最后一次远程提交：git revert HERD        git push origin master
                    git reset --hard HEAD^    git push origin master -f
@@ -32,11 +32,10 @@ push之后的回滚操作
 
 revert方法时间这次的push撤销重新push一次，需要重新填写msg，生成新的提交记录，
 reset方法是重复上次的提交动作，即重新来一遍，上次的提交记录不在存在，只有一次的提交记录
-
 回滚某次提交
 git log
 git revert commitID
-
+------------------------------------
 
 
 
