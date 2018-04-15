@@ -18,3 +18,14 @@
 git log查看提交记录
 
 本地commit之后，想重新commit，适用于修改commit msg，指令：git commit --amend -m "重新提交的信息"
+本地多次commit之后，想回到其中某一次的    git reset --hard commitID
+git log 查看commitID
+
+本地重新提交时撤销，push之后到远程仓库是回滚，回滚是有风险的
+
+push之后的回滚操作
+删除最后一次远程提交：git revert HERD        git push origin master
+                   git reset --hard HEAD^    git push origin master -f
+                   
+                   
+
